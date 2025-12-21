@@ -1,0 +1,14 @@
+Data types - Object and Mutability
+
+Everything is object in python
+
+Object have 3 properties [identity, type, value]
+
+Each Object can be Mutable(changable) or Immutable(non-changable) based on identity
+
+Numbers:
+    - Integers
+    - Boolean
+    - Real Numbers (floats/decimal)
+    - Complex Numbers
+
