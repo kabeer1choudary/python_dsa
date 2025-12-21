@@ -1,0 +1,2 @@
+Modules - anything that contains a bunch of .py files are considered as Modules
+Packages - any module which has __init__.py file is considered as Packages
