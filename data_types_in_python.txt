@@ -6,9 +6,14 @@ Object have 3 properties [identity, type, value]
 
 Each Object can be Mutable(changable) or Immutable(non-changable) based on identity
 
+Identity is a reference of a data type in memory.
+
 Numbers:
     - Integers
     - Boolean
     - Real Numbers (floats/decimal)
     - Complex Numbers
 
+String: (Immutable)
+    - Indexing
+    - Slicing
