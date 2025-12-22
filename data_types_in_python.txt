@@ -8,7 +8,7 @@ Each Object can be Mutable(changable) or Immutable(non-changable) based on ident
 
 Identity is a reference of a data type in memory.
 
-Numbers:
+Numbers: (Immutable)
     - Integers
     - Boolean
     - Real Numbers (floats/decimal)
@@ -17,3 +17,10 @@ Numbers:
 String: (Immutable)
     - Indexing
     - Slicing
+
+Tuples: (Immutable)
+    - Packing and Unpacking
+    - Membership
+
+Lists: (Mutable)
+    
