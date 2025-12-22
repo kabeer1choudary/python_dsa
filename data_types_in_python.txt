@@ -23,4 +23,12 @@ Tuples: (Immutable)
     - Membership
 
 Lists: (Mutable)
-    
+    - Append (at the end)
+    - Remove
+    - Extend (another list)
+    - Insert (on certain index)
+    - Pop (at the end)
+    - Reverse
+    - Sort
+    - Max / Min functions eg, max(list), min(list)
+    - 
