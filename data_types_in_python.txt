@@ -30,5 +30,7 @@ Lists: (Mutable)
     - Pop (at the end)
     - Reverse
     - Sort
-    - Max / Min functions eg, max(list), min(list)
-    - 
+    - Max / Min functions: max(list), min(list)
+    - Operator overloading: list1 + list2, list * 2
+    - Bytearray
+
