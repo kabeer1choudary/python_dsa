@@ -39,4 +39,18 @@ Sets & Frozensets: (Unique)
     - Intersection (Set A & Set B)
     - Difference (Set A - Set B)
     - Membership test ( {'item' in Set A} )
-    
+
+Dictionary:
+    - Add
+    - Delete
+    - Membership test
+    - List keys - dict.keys()
+    - List Values - dict.values()
+    - List items - dict.items()
+    - Pop - dict.popitem()
+    - Update - dict.update(dict)
+    - Get - dict.get('key','message_if_key_is_not_available')
+    - Set functions can be applied to Dictionary
+
+Collections:
+
