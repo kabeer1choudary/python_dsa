@@ -52,5 +52,19 @@ Dictionary:
     - Get - dict.get('key','message_if_key_is_not_available')
     - Set functions can be applied to Dictionary
 
-Collections:
-
+Collections & Other data types:
+    - datetime
+    - time
+    - calandar
+    - timedelta
+    - arrow
+    - dateutil
+    - namedtuple
+    - deque
+    - ChainMap
+    - Counter
+    - OrderedDict
+    - UserList
+    - defaultdict
+    - UserDict
+    - UserString
