@@ -34,3 +34,9 @@ Lists: (Mutable)
     - Operator overloading: list1 + list2, list * 2
     - Bytearray
 
+Sets & Frozensets: (Unique)
+    - Union (Set A | Set B)
+    - Intersection (Set A & Set B)
+    - Difference (Set A - Set B)
+    - Membership test ( {'item' in Set A} )
+    
