@@ -1,0 +1,7 @@
+Conditionals - decision making statements (yes/no)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+some_var = True
+
+if some_var:
+    print("some_var is True")
