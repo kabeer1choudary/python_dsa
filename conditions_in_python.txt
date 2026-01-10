@@ -30,3 +30,16 @@ else:
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+dev_stat = "active"
+temp = 38
+
+if dev_stat == "active":
+    if temp > 35:
+        print("high temp")
+    else:
+        print("normal temp")
+else:
+    print("dev_stat off")
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
