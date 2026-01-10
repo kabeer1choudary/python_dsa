@@ -5,3 +5,14 @@ some_var = True
 
 if some_var:
     print("some_var is True")
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+order = input("Enter your prefered order: ").lower()
+
+if order == "biscuit" or order == "fries":
+    print("order taken !")
+else:
+    print("order unavailable")
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
