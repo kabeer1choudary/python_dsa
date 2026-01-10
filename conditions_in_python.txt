@@ -20,13 +20,13 @@ else:
 ves = input("Enter the val (s/m/l): ").lower()
 
 if ves == "s":
-    print("value is 10")
+    print("val is 10")
 elif ves == "m":
-    print("value is 15")
+    print("val is 15")
 elif ves == "l":
-    print("value is 20")
+    print("val is 20")
 else:
-    print("invalid !")
+    print("invalid val !")
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
