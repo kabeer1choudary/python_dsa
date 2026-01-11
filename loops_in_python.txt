@@ -1,2 +1,11 @@
 for i in range(1,11):
     print(f"Currently serving to token no. {i}")
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+the_list = ["A", "B", "C"]
+for i in the_lst:
+    print(f"Serving for {i}")
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
