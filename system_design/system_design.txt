@@ -11,3 +11,9 @@ Why system design is important ?
     - trade-offs & decision making
     - future proofing
 
+Evolution of system design       
+    Monolithic (1995-2005)
+    Distributed systems (2005 - 2010)
+    Cloud (2010-2015)
+    Microservices & EDA (2015 - 2020)
+    AI Driven & Edge Computing (2020 - present)
