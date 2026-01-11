@@ -9,3 +9,10 @@ for i in the_lst:
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+the_list = ["A", "B", "C"]
+#enumerate will iterate a list with user defined index value
+for id,i in enumerate(the_lst, start=1): 
+    print(f"Serving for {i}: {id}")
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
