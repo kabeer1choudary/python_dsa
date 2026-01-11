@@ -64,3 +64,5 @@ match s_type:
         print("Option choosen Luxury-Sleeper")
     case _:
         print("Option choosen not valid !")
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
