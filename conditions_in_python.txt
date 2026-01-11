@@ -43,3 +43,11 @@ else:
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+order_val = int(input("Enter the order amount: "))
+
+dlvry_fee = 0 if order_val > 300 else 30
+
+print(f"delivery fees is {dlvry_fee}")
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
