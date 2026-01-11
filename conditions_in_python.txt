@@ -51,3 +51,16 @@ print(f"delivery fees is {dlvry_fee}")
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+s_type = input("Enter the seat type (sl/ac/gn/lx): ").lower()
+
+match s_type:
+    case "sl":
+        print("Option choosen Sleeper")
+    case "ac":
+        print("Option choosen AC-Sleeper")
+    case "gn":
+        print("Option choosen General-Sleeper")
+    case "lx":
+        print("Option choosen Luxury-Sleeper")
+    case _:
+        print("Option choosen not valid !")
