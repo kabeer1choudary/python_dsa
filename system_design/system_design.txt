@@ -1,0 +1,5 @@
+What is system design ?
+    - process of defining the architecture, components, modules, interfaces and data flow for a system to meet specific requirements
+    - involves high-level decisions about scalbility, reliability, performance and maintainability
+    - used in real world applications, web apps, distributed systems, databases and cloud interfaces
+
