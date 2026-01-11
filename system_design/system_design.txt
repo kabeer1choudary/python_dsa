@@ -3,3 +3,11 @@ What is system design ?
     - involves high-level decisions about scalbility, reliability, performance and maintainability
     - used in real world applications, web apps, distributed systems, databases and cloud interfaces
 
+Why system design is important ?
+    - scalbility & reliability
+    - architectural thinking
+    - career growth
+    - real world problem solving
+    - trade-offs & decision making
+    - future proofing
+
