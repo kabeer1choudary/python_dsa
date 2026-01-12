@@ -1,4 +1,4 @@
-Networking & Communication
+A) Networking & Communication - Networking is the foundation of system design
 - Why networking matters
     * data exchange between components
     * enables scalbility, reliability & performance
