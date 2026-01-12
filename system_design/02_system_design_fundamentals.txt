@@ -17,3 +17,6 @@ A) Networking & Communication - Networking is the foundation of system design
     * 2 categories - private, public
     * IPv4 - 32bit address - 4.3 billion
     * IPv6 - 128bit address - 340 undecillion
+    * private ip - local n/w - cannot access internet directly
+    * public ip - assigned by ISP - communicate over internet
+    
