@@ -19,4 +19,8 @@ A) Networking & Communication - Networking is the foundation of system design
     * IPv6 - 128bit address - 340 undecillion
     * private ip - local n/w - cannot access internet directly
     * public ip - assigned by ISP - communicate over internet
-    
+    * need of private ips - IPV4 limitation - security - NAT (allow multiple devices to share single public ip)
+    * role of ips - scalbility - security - load balancing - cloud networking - microservices & containers
+
+- How DNS Works
+    *
