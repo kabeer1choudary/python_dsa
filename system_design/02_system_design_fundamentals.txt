@@ -1,1 +1,12 @@
 Networking & Communication
+- Why networking matters
+    * data exchange between components
+    * enables scalbility, reliability & performance
+    * communication - load balancing - security - efficiency
+
+- How networking impacts Large scale systems
+    * handles many users concurrently
+    * efficient data exchange
+    * reduces latency & improves resilience
+    * essential for cloud & distributed systems
+
