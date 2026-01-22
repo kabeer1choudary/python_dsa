@@ -29,4 +29,12 @@ A) Networking & Communication - Networking is the foundation of system design
         - TLD Name Servers : Top Level Domain NS, specific to domains
         - Authoritative NS : stores domain-specific records
         - Recursive Resolvers : handle queries on behalf od users, contains multiple DNS servers
-    * 
+    * DNS caching - reduces latency & load on DNS servers - caching happens in browser, OS, Recursive Resolvers - TTL (time-to-live) determines how long a cached record is valid
+    * DNS process
+        browser > OS > local DNS > root DNS > TLD NS > Authoritative NS > ip return to browser
+    * DNS in large scale systems
+        - ensures HA (using load balancing or anycast DNS)
+        - failover strategies using primary & secondary servers
+        - optimize CDNs performance
+        - security risks (DNS poisoning, cache poisoning, DDoS attacks)
+        
