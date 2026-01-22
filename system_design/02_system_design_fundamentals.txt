@@ -37,4 +37,14 @@ A) Networking & Communication - Networking is the foundation of system design
         - failover strategies using primary & secondary servers
         - optimize CDNs performance
         - security risks (DNS poisoning, cache poisoning, DDoS attacks)
-        
+
+- Client - Server Model
+    * client request services, servers provide them
+    * foundation of web, db and app architecture
+    * efficient resource management
+    * Key components
+        - Client : user facing app that sends requests
+        - Server : system that process the requests and returns response
+        - Network : medium that facilitates communication between client and server
+    * Types of communication - request/response model (http), persistent connections, synchronous/asynchronous communication
+    * 
