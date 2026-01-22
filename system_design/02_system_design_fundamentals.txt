@@ -23,4 +23,10 @@ A) Networking & Communication - Networking is the foundation of system design
     * role of ips - scalbility - security - load balancing - cloud networking - microservices & containers
 
 - How DNS Works
-    *
+    * translates human readable domain names into ip addresses
+    * Types of DNS
+        - Root Name Servers : top level servers handling .com, .org, .net etc.
+        - TLD Name Servers : Top Level Domain NS, specific to domains
+        - Authoritative NS : stores domain-specific records
+        - Recursive Resolvers : handle queries on behalf od users, contains multiple DNS servers
+    * 
