@@ -47,4 +47,7 @@ A) Networking & Communication - Networking is the foundation of system design
         - Server : system that process the requests and returns response
         - Network : medium that facilitates communication between client and server
     * Types of communication - request/response model (http), persistent connections, synchronous/asynchronous communication
-    * 
+    * Types of servers
+        - stateful servers : maintain session info across requests - personalize - seamless user experiences
+        - stateless servers : no memory of past session interactions, each request is independant, scalable - easy cache - loadbalanced
+        
