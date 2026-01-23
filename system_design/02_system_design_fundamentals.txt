@@ -66,3 +66,10 @@ A) Networking & Communication - Networking is the foundation of system design
     * LB strategies
         - Static Load Balancing : Round Robin, Least Connections, IP Hashing
         - Dynamic Load Balancing : Least Response time, Adaptive load balancing, Weighted load balancing
+
+- API Gateways
+    * APIs connect clients to backend services - exposing backend services lead to performance, security and management challanges
+    * API Gateway is a centralized entry point for all API requests, handling authentication, routing, caching and security
+    * API Gateway acts as reverse proxy between clients and backend services - receives API requests, process them and forward to correct services
+    * Key functions of API Gateway - request transformation, authentication, rate limiting and response handling
+    
