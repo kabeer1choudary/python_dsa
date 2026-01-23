@@ -72,4 +72,9 @@ A) Networking & Communication - Networking is the foundation of system design
     * API Gateway is a centralized entry point for all API requests, handling authentication, routing, caching and security
     * API Gateway acts as reverse proxy between clients and backend services - receives API requests, process them and forward to correct services
     * Key functions of API Gateway - request transformation, authentication, rate limiting and response handling
+    * Benefits of API Gateway - security, rate limiting, load balancing, caching, request trasformation, logging & monitoring
+    * Security features of API Gateway - authentication & authorization, DDoS protection, Bot protection, TLS termination, rate limiting, throttling
+    * Caching speeds up API responses by storing frequently accessed data
+    * Types of Caching - in-memory caching, response caching, edge caching
+    * API composition & aggregation - API Gateways combine multiple API calls into single request, useful for microservices architecture
     
