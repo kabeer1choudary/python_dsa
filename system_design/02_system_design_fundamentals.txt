@@ -51,9 +51,15 @@ A) Networking & Communication - Networking is the foundation of system design
         - stateful servers : maintain session info across requests - personalize - seamless user experiences
         - stateless servers : no memory of past session interactions, each request is independant, scalable - easy cache - loadbalanced
         
-
 - Forward Proxy vs Reverse Proxy
     * proxy is an intermediary server between client and server - helps with security, caching, traffic control and anonymity
     * forward proxy - sits infront of the client - privacy, anonymity, content filtering, bypass geo-restrictions, caching
     * reverse proxy - sits between users and backend servers - load balancing, security & DDoS protection, SSL termination, caching & compression
-    
+    * forward proxy helps client interactions with internet securely
+    * reverse proxy protects and optimizes backend servers
+
+- Load Balancers
+    * high availability - traffic distribution - prevents overload - handles failures gracefully - supports scalbility
+    * Types of Load Balancers
+        - Based on Layer : Layer 4 (Transport Layer - TCP/UDP), Layer 7 (Application Layer - HTTP/HTTPS)
+        - Based on Deployment - Hardware LB, Software LB, Cloud based LB
