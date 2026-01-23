@@ -63,3 +63,6 @@ A) Networking & Communication - Networking is the foundation of system design
     * Types of Load Balancers
         - Based on Layer : Layer 4 (Transport Layer - TCP/UDP), Layer 7 (Application Layer - HTTP/HTTPS)
         - Based on Deployment - Hardware LB, Software LB, Cloud based LB
+    * LB strategies
+        - Static Load Balancing : Round Robin, Least Connections, IP Hashing
+        - Dynamic Load Balancing : Least Response time, Adaptive load balancing, Weighted load balancing
