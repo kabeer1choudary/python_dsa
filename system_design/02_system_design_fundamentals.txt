@@ -77,4 +77,11 @@ A) Networking & Communication - Networking is the foundation of system design
     * Caching speeds up API responses by storing frequently accessed data
     * Types of Caching - in-memory caching, response caching, edge caching
     * API composition & aggregation - API Gateways combine multiple API calls into single request, useful for microservices architecture
+
+- Content Delivery Networks (CDNs)
+    * CDN - globally distributed network of servers that work together to deliver content efficiently
+    * CDN reduces latency, enhances content availability, improves load handling, enables security
+    * Components of CDN - Origin server, Edge server (PoP - point of presence), Request routing system (directs users to nearest PoP)
+    * CDN workflow - user request > CDN routing system > cache hit (delivers the content)/cache miss (fetches content from origin)
+    * Key features of CDN - caching & replication, load balancing & request routing, compression & optimization, security
     
