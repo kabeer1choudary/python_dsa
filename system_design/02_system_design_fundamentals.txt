@@ -124,4 +124,16 @@ B) Protocols
         - cacheability
         - layered system
         - uniform interface
+    * RESTful API design principles
+        - resource based approach
+        - proper HTTP methods usage
+        - stateless interactions
+        - consistency in URL structure
+    * REST response - JSON (light weight, faster parsing, readable), XML (legacy system communication, data validation)
+    * Best practices
+        - use proper status code
+        - versioning APIs
+        - implement authentication
+        - pagination
+        - avoid using verbs in URLs
         
