@@ -106,4 +106,12 @@ B) Protocols
         - client server model : client makes HTTP request, server processes the request and sends back a response
         - HTTP Request : Method (defined action - PUT, GET, etc), URL (resource being requested), Headers (metadata, user-agent, content type, etc.), Body (optional data sent in POST/PUT requests)
         - HTTP Response : Status code (indicate success or failure - 200, 302, etc), Headers (metadata about the response), Body (actual content returned)
-        
+    * stateless nature of HTTP
+        - HTTP does not retain memory of previous requests
+        - each request treated as independant transaction
+        - hard to maintain user session and each request must carry all necessary information
+        - to handle states we can use : cookies (small pieces of data stored in browser), sessions (server side storage of user state), tokens (JWT, OAuth - used for authentication and authorization)
+    * HTTP Methods - GET, POST, PUT, DELETE, PATCH
+    * HTTP status code - 1xx (informational), 2xx (success), 3xx (redirection), 4xx (client errors), 5xx (server errors)
+    * HTTPS - secure version of HTTP, ensures data confidentiality, integrity, authentication, used for secure websites, works on port 443
+    
