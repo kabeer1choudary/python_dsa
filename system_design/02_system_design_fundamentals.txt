@@ -136,4 +136,5 @@ B) Protocols
         - implement authentication
         - pagination
         - avoid using verbs in URLs
-        
+
+- Real-Time Communication Protocols
