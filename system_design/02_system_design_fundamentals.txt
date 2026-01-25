@@ -89,4 +89,12 @@ A) Networking & Communication - Networking is the foundation of system design
         - techniques of compression and minification (gzip & brotli compression, image optimization - webp/avif, minifying CSS/JS files to reduce file size)
         - DDoS mitigation (rate limiting, traffic filtering), SSL/TLS offloading
     * CDN use cases - static & dynamic content delivery, api acceleration & edge computing
-    
+
+
+
+B) Protocols
+- TCP & UDP
+    * Transmission Control Protocol - connection oriented, reliable, ordered, error-checked, ensures data reaches the destination correctly
+    * User Datagram Protocol - conectionless, faster,no gurantee on deliivery, no retransmission of lost packets
+    * Choose TCP if data integrity is critical - HTTP, HTTPS, FTP, SFTP, IMAP, SMTP, POP3, DB Communication
+    * Choose UDP if speed is important - video streaming, online gaming, VoIP calls, DNS lookup
