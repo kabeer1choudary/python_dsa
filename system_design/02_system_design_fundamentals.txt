@@ -100,4 +100,10 @@ B) Protocols
     * Choose UDP if speed is important - video streaming, online gaming, VoIP calls, DNS lookup
 
 - HTTP - hyper text transfer protocol
-    
+    * defines rules for requesting and trasfering resources - works over TCP/IP (port 80 for http and port 443 for https)
+    * text based protocol - stateless (each request is independent) - supports multiple methods (GET, POST, PUT, etc)
+    * how HTTP works
+        - client server model : client makes HTTP request, server processes the request and sends back a response
+        - HTTP Request : Method (defined action - PUT, GET, etc), URL (resource being requested), Headers (metadata, user-agent, content type, etc.), Body (optional data sent in POST/PUT requests)
+        - HTTP Response : Status code (indicate success or failure - 200, 302, etc), Headers (metadata about the response), Body (actual content returned)
+        
