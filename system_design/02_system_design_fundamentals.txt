@@ -114,4 +114,14 @@ B) Protocols
     * HTTP Methods - GET, POST, PUT, DELETE, PATCH
     * HTTP status code - 1xx (informational), 2xx (success), 3xx (redirection), 4xx (client errors), 5xx (server errors)
     * HTTPS - secure version of HTTP, ensures data confidentiality, integrity, authentication, used for secure websites, works on port 443
-    
+
+- REST & RESTfulness - API Design Principles
+    * REST - REpresentational State Transfer - architectural style for designing networked applications - uses HTTP methods and stateless communication
+    * REST is scalable, simple, interoperable with different platforms and efficient with caching, stateless performance
+    * REST Constraints - core Principles
+        - client-server architecture
+        - statelessness
+        - cacheability
+        - layered system
+        - uniform interface
+        
