@@ -84,4 +84,9 @@ A) Networking & Communication - Networking is the foundation of system design
     * Components of CDN - Origin server, Edge server (PoP - point of presence), Request routing system (directs users to nearest PoP)
     * CDN workflow - user request > CDN routing system > cache hit (delivers the content)/cache miss (fetches content from origin)
     * Key features of CDN - caching & replication, load balancing & request routing, compression & optimization, security
+        - cache expiration and TTL settings control the content freshness, caching invalidation strategies (manual purge, stale-while-revalidation)
+        - load balancing across multiple PoPs, failover strategy (rerouting to another PoP, dynamic origin selection), request routing strategy (geo-based, latency-based, load-aware)
+        - techniques of compression and minification (gzip & brotli compression, image optimization - webp/avif, minifying CSS/JS files to reduce file size)
+        - DDoS mitigation (rate limiting, traffic filtering), SSL/TLS offloading
+    * CDN use cases - static & dynamic content delivery, api acceleration & edge computing
     
