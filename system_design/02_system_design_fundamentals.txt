@@ -98,3 +98,6 @@ B) Protocols
     * User Datagram Protocol - conectionless, faster,no gurantee on deliivery, no retransmission of lost packets
     * Choose TCP if data integrity is critical - HTTP, HTTPS, FTP, SFTP, IMAP, SMTP, POP3, DB Communication
     * Choose UDP if speed is important - video streaming, online gaming, VoIP calls, DNS lookup
+
+- HTTP - hyper text transfer protocol
+    
