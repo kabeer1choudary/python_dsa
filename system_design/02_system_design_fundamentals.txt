@@ -91,7 +91,6 @@ A) Networking & Communication - Networking is the foundation of system design
     * CDN use cases - static & dynamic content delivery, api acceleration & edge computing
 
 
-
 B) Protocols
 - TCP & UDP
     * Transmission Control Protocol - connection oriented, reliable, ordered, error-checked, ensures data reaches the destination correctly
@@ -151,4 +150,13 @@ B) Protocols
     * Long polling - simulating real time with HTTP
         - a technique where client sends request to server and waits until server has new data to respond with, then client immediately sends another request
         - used in periodic update notifications, IoT devices, etc.
-        
+
+- Modern API Protocols
+    * limitations of REST APIs - over fetching & under fetching, high latency, not optimized for real time communication
+    * need for modern solutions like gRPC & GraphQL to handle efficiency, flexibility and performance
+    * gRPC - high performance binary protocol optimized for microservices & real-time communication - uses protocol buffers (ProtoBuf)
+        - built on HTTP/2, allows multiplexed requests, compression, full duplex streaming, ProtoBuf for faster serialization, useful in multi-language ecosystems & low bandwidth apps
+    * GraphQL - flexible query language that allows clients to fetch only the data they need - JSON based
+        - instead of multiple REST endpoints, GraphQL has one endpoint where clients specify the data they need, GraphQL schema defines types & relationships between data
+        - clients sends queries > graphql server resolves fields dynamically
+        - used in front end optimization, reducing API requests, aggregate data from multiple services
