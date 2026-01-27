@@ -138,3 +138,11 @@ B) Protocols
         - avoid using verbs in URLs
 
 - Real-Time Communication Protocols
+    * real time communication refers to contineous exchange of data with minimal latency
+    * challanges of traditional request-response HTTP model due to latency and scalability issues
+    * alternatives to improve real-time data exchange
+        - polling
+        - web sockets
+        - server-sent events (SSE)
+        - long polling
+        
