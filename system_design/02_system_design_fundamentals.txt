@@ -160,3 +160,4 @@ B) Protocols
         - instead of multiple REST endpoints, GraphQL has one endpoint where clients specify the data they need, GraphQL schema defines types & relationships between data
         - clients sends queries > graphql server resolves fields dynamically
         - used in front end optimization, reducing API requests, aggregate data from multiple services
+
