@@ -148,4 +148,7 @@ B) Protocols
     * Web Sockets - persistent full duplex communication between client and server over a single TCP connection
         - persistent connection, low latency, reduces overhead compared to HTT polling, efficient for real-time applications
         - used in live chat apps, stock market price updates, multiplayer online games, collaborative tools, etc.
-    
+    * Long polling - simulating real time with HTTP
+        - a technique where client sends request to server and waits until server has new data to respond with, then client immediately sends another request
+        - used in periodic update notifications, IoT devices, etc.
+        
