@@ -145,4 +145,7 @@ B) Protocols
         - web sockets
         - server-sent events (SSE)
         - long polling
-        
+    * Web Sockets - persistent full duplex communication between client and server over a single TCP connection
+        - persistent connection, low latency, reduces overhead compared to HTT polling, efficient for real-time applications
+        - used in live chat apps, stock market price updates, multiplayer online games, collaborative tools, etc.
+    
