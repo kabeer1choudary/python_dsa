@@ -161,3 +161,11 @@ B) Protocols
         - clients sends queries > graphql server resolves fields dynamically
         - used in front end optimization, reducing API requests, aggregate data from multiple services
 
+
+C) Architectural Patterns
+- Intro
+    * software architecture - structure of a system including its components and relationships - importance of system design includes scalability, maintainability and performance
+    
+
+
+D) Web Concepts in System Design
