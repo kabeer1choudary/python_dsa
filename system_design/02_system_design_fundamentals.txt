@@ -175,4 +175,10 @@ C) Architectural Patterns
         - Event-Driven : system where components communicate through events instead of direct calls, these are loose coupling - high decoupled architecture, excellent for handling asynchronous workflows, better scalability - debugging and tracing become more complex, difficult to ensure data consistency across services - used in real time systems, IoT apps, financial trading platforms
     * factors influencing architecture selection - business needs, scalability, performance, maintainability
 
+- Multi-Tier architecture
+    * 
+
+
+
+
 D) Web Concepts in System Design
