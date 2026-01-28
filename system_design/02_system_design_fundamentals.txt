@@ -182,5 +182,7 @@ C) Architectural Patterns
     * N-tier architecture - more than 3 tier layers - caching, API gateway, microservices - handles high traffic, complex business logic, allow independant scaling
     * Tier impacts system performance & scalability - latency considerations (enable caching) and scaling strategies (horizontal/vertical scaling)
 
+- Microservices architecture
+    
 
 D) Web Concepts in System Design
