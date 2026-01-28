@@ -176,9 +176,11 @@ C) Architectural Patterns
     * factors influencing architecture selection - business needs, scalability, performance, maintainability
 
 - Multi-Tier architecture
-    * 
-
-
+    * presentation layer - business logic layer - data access layer - each layer responsible for specific functions that enhances scalability, maintainability and performance
+    * 2tier architecture - consists of client/presentation layer and db layer - simple to implement, fast at small-scale - poor scalability, high security risks
+    * 3tier architecture - consists of presentation, business logic and database layer - improves scalability, better seperation, easy maintainability - slightly higher latency
+    * N-tier architecture - more than 3 tier layers - caching, API gateway, microservices - handles high traffic, complex business logic, allow independant scaling
+    * Tier impacts system performance & scalability - latency considerations (enable caching) and scaling strategies (horizontal/vertical scaling)
 
 
 D) Web Concepts in System Design
