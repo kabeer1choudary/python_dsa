@@ -166,6 +166,13 @@ C) Architectural Patterns
 - Intro
     * software architecture - structure of a system including its components and relationships - importance of system design includes scalability, maintainability and performance
     
-
+- Software architecture pattern & styles
+    * software architecture is high-level structure of a software system, defining components, their relationships and the way they interactions
+    * common architectural styles are
+        - Monolithic : single unified system - simple to develop, deploy and manage in smaller apps - hard to scale, difficult to maintain as code base grows, high risk of failure - used in small apps, startups, simple CRUD based apps
+        - Layered (N-tier) : system split into multiple layers - clear seperation of concerns, easier to scale and maintain compared to Monolithic - performance overhead due to layers, may result tight coupling between certain layers - used in enterprise apps, CRM systems, banking apps
+        - Microservices : system built as collection of small independant services, each focuses on specific business capability - independant services, flexible tech stack, better fault tolerance, easy to scale, deploy and develop seperately - increases complexity in communication and co-ordination, needs robust devops/automation pipelines - used in large scale apps, e-commerce platforms, modern cloud based systems
+        - Event-Driven : system where components communicate through events instead of direct calls, these are loose coupling - high decoupled architecture, excellent for handling asynchronous workflows, better scalability - debugging and tracing become more complex, difficult to ensure data consistency across services - used in real time systems, IoT apps, financial trading platforms
+    * factors influencing architecture selection - business needs, scalability, performance, maintainability
 
 D) Web Concepts in System Design
