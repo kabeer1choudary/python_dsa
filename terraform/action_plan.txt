@@ -1,0 +1,156 @@
+Action Plan
+📦 Prerequisites (Before Day 1)
+	• Basic understanding of cloud computing (AWS/Azure/GCP)
+	• Familiarity with terminal/CLI
+	• A free-tier cloud account (AWS recommended)
+	• Install: Terraform CLI, VS Code + HashiCorp Terraform extension
+
+🟢 WEEK 1 — Foundations (Days 1–7)
+Day 1 — What is Terraform & IaC? (1 hr)
+	• Learn: What is Infrastructure as Code (IaC)? Why Terraform?
+	• Compare: Terraform vs CloudFormation vs Pulumi vs Ansible
+	• Do: Install Terraform, verify with terraform version
+	• Read: Terraform Intro Docs
+Day 2 — HCL Syntax Basics (1.5 hrs)
+	• Learn: HashiCorp Configuration Language (HCL) syntax
+	• Concepts: Blocks, arguments, expressions, comments
+	• Do: Write your first .tf file (no cloud yet — just understand structure)
+	• Practice: Declare a resource, variable, and output block manually
+Day 3 — Core Terraform Workflow (1.5 hrs)
+	• Learn: terraform init, terraform plan, terraform apply, terraform destroy
+	• Do: Deploy a simple AWS S3 bucket (or Azure storage account)
+	• Observe: What happens in .terraform/, terraform.tfstate
+Day 4 — Providers & Resources (1.5 hrs)
+	• Learn: What are providers? How to configure them
+	• Do: Configure AWS provider, create an EC2 instance
+	• Explore: Terraform Registry
+Day 5 — Variables & Outputs (1.5 hrs)
+	• Learn: variable blocks, var.*, output blocks
+	• Types: string, number, bool, list, map, object
+	• Do: Parameterize your EC2 instance (instance type, region as variables)
+	• Practice: Use terraform.tfvars and CLI -var flags
+Day 6 — Local Values & Data Sources (1.5 hrs)
+	• Learn: locals block for computed values
+	• Learn: data sources to fetch existing infrastructure
+	• Do: Use data.aws_ami to dynamically fetch the latest Amazon Linux AMI
+Day 7 — Review & Mini-Project (2 hrs)
+	• Review: Days 1–6 concepts
+	• Build: Deploy a full VPC + Subnet + EC2 using variables, locals, and outputs
+	• Practice: destroy and apply the whole thing twice
+
+🔵 WEEK 2 — Intermediate Concepts (Days 8–14)
+Day 8 — Terraform State Deep Dive (1.5 hrs)
+	• Learn: What is terraform.tfstate? Why it matters
+	• Concepts: State locking, state drift, terraform state list/show/mv/rm
+	• Do: Inspect your state file after an apply
+Day 9 — Remote State & Backends (1.5 hrs)
+	• Learn: Local vs Remote backends (S3 + DynamoDB for locking)
+	• Do: Migrate local state to an S3 backend
+	• Understand: Why remote state is critical for teams
+Day 10 — Modules (Part 1: Using Modules) (1.5 hrs)
+	• Learn: What are modules? Root module vs child modules
+	• Do: Use a public module from Terraform Registry (e.g., terraform-aws-modules/vpc/aws)
+	• Practice: Call the module, pass inputs, use outputs
+Day 11 — Modules (Part 2: Writing Your Own) (2 hrs)
+	• Learn: Module structure: main.tf, variables.tf, outputs.tf
+	• Do: Write a reusable EC2 module with configurable inputs
+	• Practice: Call your module from a root configuration
+Day 12 — Terraform Functions (1.5 hrs)
+	• Learn: Built-in functions: length(), lookup(), merge(), toset(), join(), format(), file()
+	• Do: Use terraform console to experiment with functions interactively
+	• Practice: Use functions in your variable defaults and locals
+Day 13 — Count, For_Each & Dynamic Blocks (2 hrs)
+	• Learn: count meta-argument, for_each with maps/sets
+	• Learn: dynamic blocks for repeated nested config
+	• Do: Create multiple S3 buckets using for_each, multiple security group rules using dynamic
+Day 14 — Review & Mini-Project (2 hrs)
+	• Build: A full modular network stack (VPC, subnets, IGW, route tables) using your own modules + for_each
+	• Store: State in S3 remote backend
+	• Test: Modify a variable and run terraform plan to see the diff
+
+🟠 WEEK 3 — Advanced Topics (Days 15–21)
+Day 15 — Workspaces (1.5 hrs)
+	• Learn: terraform workspace commands
+	• Use case: Managing dev/staging/prod environments
+	• Do: Create dev and prod workspaces, deploy different resources per workspace
+	• Understand: Limitations of workspaces vs separate state files
+Day 16 — Lifecycle Rules & Resource Dependencies (1.5 hrs)
+	• Learn: lifecycle block: create_before_destroy, prevent_destroy, ignore_changes
+	• Learn: Implicit vs explicit dependencies (depends_on)
+	• Do: Apply lifecycle rules to an EC2 instance and test them
+Day 17 — Terraform Import & State Management (1.5 hrs)
+	• Learn: terraform import to bring existing infra under Terraform control
+	• Learn: terraform state mv, terraform state rm
+	• Do: Manually create an S3 bucket in AWS Console, then import it into Terraform
+Day 18 — Provisioners (1 hr)
+	• Learn: local-exec, remote-exec provisioners
+	• Understand: Why provisioners are a last resort (prefer cloud-init or Ansible)
+	• Do: Use local-exec to run a script after resource creation
+Day 19 — Terraform with CI/CD (GitHub Actions) (2 hrs)
+	• Learn: Integrating Terraform in a CI/CD pipeline
+	• Do: Create a GitHub Actions workflow that runs terraform plan on PRs and terraform apply on merge to main
+	• Best practice: Use OIDC for AWS credentials (no static keys)
+Day 20 — Secrets & Sensitive Values (1.5 hrs)
+	• Learn: Marking variables as sensitive = true
+	• Do: Store secrets in AWS SSM Parameter Store / HashiCorp Vault, reference them via data source
+	• Practice: Never hardcode secrets — enforce via .gitignore for *.tfvars
+Day 21 — Review & Project (2 hrs)
+	• Build: A multi-environment (dev/prod) infrastructure using workspaces or separate backends, deployed via GitHub Actions CI/CD pipeline
+
+🔴 WEEK 4 — Expert Level & Real-World Practices (Days 22–30)
+Day 22 — Terraform Cloud / HCP Terraform (1.5 hrs)
+	• Learn: Terraform Cloud features: remote runs, VCS integration, policy enforcement
+	• Do: Connect a repo to Terraform Cloud, trigger a run from a GitHub push
+	• Explore: Sentinel policies for governance
+Day 23 — Testing Terraform Code (2 hrs)
+	• Learn: terraform validate, terraform fmt, tflint
+	• Learn: terraform test (native testing framework, introduced in v1.6)
+	• Do: Write a .tftest.hcl file to test your VPC module
+	• Explore: Terratest (Go-based testing framework)
+Day 24 — Terraform Refactoring & Moved Block (1.5 hrs)
+	• Learn: moved block for safely renaming/moving resources
+	• Learn: Refactoring module structure without destroying resources
+	• Do: Rename a resource using moved block and verify plan shows 0 changes
+Day 25 — Advanced Module Patterns (2 hrs)
+	• Learn: Module composition, module versioning (Git tags, Terraform Registry)
+	• Learn: Passing modules as variables (module abstraction)
+	• Do: Publish a module to a private GitHub repo with versioned releases
+Day 26 — Multi-Cloud & Multi-Region (1.5 hrs)
+	• Learn: Using multiple provider configurations (alias)
+	• Do: Deploy resources in 2 AWS regions using provider aliases
+	• Explore: Cross-cloud setups (AWS + Cloudflare, or AWS + GitHub provider)
+Day 27 — Policy as Code with Sentinel / OPA (1.5 hrs)
+	• Learn: What is policy as code? Sentinel (Terraform Cloud) vs OPA (open-source)
+	• Do: Write a Sentinel policy that enforces S3 bucket encryption
+	• Explore: Checkov for static security scanning of Terraform code
+Day 28 — Performance, Scaling & Large Codebases (1.5 hrs)
+	• Learn: Partial backends, target flag (-target), parallelism flag
+	• Learn: Organizing large Terraform repos (mono-repo vs poly-repo strategies)
+	• Explore: Terragrunt for DRY Terraform configurations at scale
+Day 29 — Real-World Architecture Project (2–3 hrs)
+	• Build: A production-ready 3-tier web app infrastructure:
+		○ VPC with public/private subnets
+		○ ALB → EC2 Auto Scaling Group → RDS (via modules)
+		○ Remote state in S3, deployed via GitHub Actions
+		○ Secrets via SSM, sensitive outputs masked
+Day 30 — Wrap-Up, Review & Certification Prep (2 hrs)
+	• Review: All major concepts from the 30 days
+	• Explore: HashiCorp Certified: Terraform Associate exam objectives
+	• Practice: Take a mock exam on ExamTopics or HashiCorp's Study Guide
+	• Reflect: Document your learning, push all projects to GitHub
+
+📚 Key Resources
+Resource	Link
+Official Docs	https://developer.hashicorp.com/terraform/docs
+Terraform Registry	https://registry.terraform.io
+HashiCorp Learn	https://developer.hashicorp.com/terraform/tutorials
+Certification Guide	https://developer.hashicorp.com/terraform/tutorials/certification-003
+Terratest	https://terratest.gruntwork.io
+Checkov (Security)	https://www.checkov.io
+
+🎯 30-Day Summary
+Week	Focus	Outcome
+Week 1	Foundations	Write & deploy basic infra
+Week 2	Intermediate	Modules, state, functions
+Week 3	Advanced	CI/CD, secrets, workspaces
+Week 4	Expert	Testing, scaling, real project
